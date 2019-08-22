@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/LogoGojek"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_hitam"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="9dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/mart"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/menu_gomart" />
+        <ImageButton
+            android:id="@+id/bike"
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="160dp"
+            android:background="@drawable/menu_goride" />
+        <ImageButton
+            android:id="@+id/foodha"
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="160dp"
+            android:onClick="food"
+            android:background="@drawable/menu_gofood" />
+        <ImageButton
+            android:id="@+id/box"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/menu_gosend"
+            />
+    </GridLayout>
+</LinearLayout>
